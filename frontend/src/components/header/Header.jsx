@@ -4,7 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const Header = () => {
     return (
-        <div className='py-3 2xl:py-4 px-6 h-fit bg-[#f5f7f9]'style={{ boxShadow: '0 4px 4px -4px rgba(0, 0, 0, 0.5)' }} >
+        <div className='py-3 2xl:py-4 px-6 h-fit bg-[#f5f7f9]'style={{ boxShadow: '0 4px 8px -4px rgba(0, 0, 0, 0.1)' }} >
             <div className='flex  justify-between items-center'>
                 <div className='flex gap-3'>
                     <img src={globalPf} className='w-12 h-12 rounded-xl'></img>

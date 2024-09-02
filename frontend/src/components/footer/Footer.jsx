@@ -6,7 +6,7 @@ import MicNoneIcon from '@mui/icons-material/MicNone';
 
 const Footer = () => {
     return (
-        <div className='bg-[#ebedee] py-4 px-6'>
+        <div className='bg-[#ebedee] py-4 px-6' style={{ boxShadow: '0 -2px 8px rgba(0, 0, 0, 0.1)' }}>
             <div className='flex items-center gap-6'>
                 <EmojiEmotionsIcon sx={{ color:'#f3a01c' ,cursor:'pointer'}} />
                 <AddIcon sx={{cursor:'pointer'}}/>
