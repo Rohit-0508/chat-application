@@ -4,7 +4,7 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import GoogleButton from '../components/buttons/GoogleButton'
 import { Checkbox } from '@mui/material';
-const SignUp = () => {
+const Login = () => {
 
     return (
         <div className='flex w-screen h-screen items-center'>
@@ -13,17 +13,13 @@ const SignUp = () => {
             </div>
             <div className='flex justify-center items-center w-3/5'>
                 <div className='flex flex-col 2xl:gap-5 gap-5 items-end'>
-                    <p className='font-normal text-xs'>Already have an account? <span className='2xl:text-xl text-sm font-normal border px-4 pt-1 pb-2 rounded-full border-black  cursor-pointer'> Sign In</span></p>
+                    <p className='font-normal text-xs'>Don't have an account? <span className='2xl:text-xl text-sm font-normal border px-4 pt-1 pb-2 rounded-full border-black  cursor-pointer'> Sign Up</span></p>
                     <div className='flex flex-col justify-center items-center 2xl:gap-8 gap-3 border border-[#42275A] 2xl:p-10 py-6 px-10 rounded-3xl 2xl:w-full'>
                         <div className='flex flex-col justify-center items-center gap-1 w-full 2xl:max-w-[349px] max-w-[280px] text-center'>
-                            <h3 className='2xl:text-3xl text-2xl font-medium'>Create an account</h3>
-                            <p className='font-normal 2xl:text-base text-xs text-[#666666] '>Hey there! welcome to echo. Signup fast and enjoy using the site.</p>
+                            <h3 className='2xl:text-3xl text-2xl font-medium'>Log In</h3>
+                            <p className='font-normal 2xl:text-base text-xs text-[#666666] '>Hey there! welcome to echo. Login fast and enjoy using the site.</p>
                         </div>
-                        <form action="" className='flex flex-col 2xl:gap-6 gap-2'>
-                            <div className='flex flex-col font-normal 2xl:text-base text-sm text-[#666666] gap-1'>
-                                <span>Username</span>
-                                <input type="text" className='border border-[#666666] rounded-xl 2xl:p-3 p-2' />
-                            </div>
+                        <form action="" className='flex flex-col 2xl:gap-6 gap-2 w-full'>
                             <div className='flex flex-col font-normal 2xl:text-base text-sm text-[#666666] gap-1'>
                                 <span>Email</span>
                                 <input type="email" className='border border-[#666666] rounded-xl 2xl:p-3 p-2' />
@@ -38,12 +34,7 @@ const SignUp = () => {
                                 </div>
                                 <input type="password" className='border border-[#666666] rounded-xl 2xl:p-3 p-2' />
                             </div>
-                            <div className='flex justify-center items-center font-normal 2xl:text-base text-xs'>
-                                <Checkbox color='default' />
-                                <p>By creating an account, I agree to our Terms of use and
-                                    Privacy Policy </p>
-                            </div>
-                            <button className='w-full bg-custom-gradient  text-white 2xl:text-xl text-base font-normal 2xl:h-16 h-10 border-none rounded-full'>Sign Up</button>
+                            <button className='w-full bg-custom-gradient mt-3  text-white 2xl:text-xl text-base font-normal 2xl:h-16 h-10 border-none rounded-full'>Log In</button>
                         </form>
                         <div className="flex items-center gap-2 w-full">
                             <div className="h-px w-full bg-lightBlack"></div>
@@ -52,7 +43,7 @@ const SignUp = () => {
                             </span>
                             <div className="h-px w-full bg-lightBlack"></div>
                         </div>
-                        <GoogleButton text="Continue with Google" />
+                        <GoogleButton text="Continue with Google"/>
                     </div>
                 </div>
             </div>
@@ -60,4 +51,4 @@ const SignUp = () => {
     )
 }
 
-export default SignUp
+export default Login
